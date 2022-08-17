@@ -173,7 +173,6 @@ ORDER BY count DESC;
 
 SELECT * FROM retiring_titles;
 
-
 -- Create a list of employees eligible for potential mentor program
 SELECT e.emp_no,
 	e.first_name,
