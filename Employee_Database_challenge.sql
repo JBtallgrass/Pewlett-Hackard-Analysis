@@ -127,21 +127,21 @@ WHERE d.dept_name IN ('Sales', 'Development')
 ORDER BY ce.emp_no; 
 
 -- Challenge
--- Numeber of (titles) retiring 
+-- Number of (titles) retiring 
 SELECT ce.emp_no,
 	ce.first_name,
 	ce.last_name,
 	ti.title,
 	ti.from_date,
 	ti.to_date 
-INTO ret_titles
+INTO retirement_titles
 FROM current_emp as ce 
 	INNER JOIN titles as ti
 		ON (ce.emp_no =ti.emp_no)
 ORDER BY (ce.emp_no);
 
-SELECT * FROM ret_titles
-ORDER BY ret_titles.emp_no;
+SELECT * FROM retirement_titles
+ORDER BY retirement_titles.emp_no;
 
 -- Partition the data to show the most recent title per employee 
 SELECT emp_no,
