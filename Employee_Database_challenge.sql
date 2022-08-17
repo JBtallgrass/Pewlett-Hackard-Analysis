@@ -134,7 +134,7 @@ SELECT ce.emp_no,
 	ti.title,
 	ti.from_date,
 	ti.to_date 
-INTO retirement_titles
+-- INTO retirement_titles
 FROM current_emp as ce 
 	INNER JOIN titles as ti
 		ON (ce.emp_no =ti.emp_no)
@@ -143,21 +143,20 @@ ORDER BY (ce.emp_no);
 SELECT * FROM retirement_titles
 ORDER BY retirement_titles.emp_no;
 
--- Partition the data to show the most recent title per employee 
+-- Delete duplicate titles 
 SELECT emp_no,
 	first_name,
 	last_name,
 	to_date, 
 	title
-INTO unique_titles
+INTO unique_titles2
 FROM (
-	SELECT emp_no, 
+	SELECT DISTINCT emp_no, 
 		first_name,
 		last_name,
 		to_date,
 		title, ROW_NUMBER() OVER
-		(PARTITION BY (emp_no)
-		ORDER BY to_date DESC) rn
+		(ORDER BY to_date DESC) rn
 		FROM ret_titles
 		) tap WHERE rn = 1 
 ORDER BY emp_no; 
@@ -172,6 +171,7 @@ GROUP BY title
 ORDER BY count DESC; 
 
 SELECT * FROM retiring_titles;
+
 
 -- Create a list of employees eligible for potential mentor program
 SELECT e.emp_no,
