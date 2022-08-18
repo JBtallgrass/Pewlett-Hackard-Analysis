@@ -1,5 +1,10 @@
 # Pewlett-Hackard-Analysis
-Deliverable 3: A written report on the employee database analysis (20 points)
+
+##Deliverable 1:
+
+##Deliverable 2: 
+
+##Deliverable 3: A written report on the employee database analysis (20 points)
 Deliverable 3 Instructions
 For this part of the Challenge, you’ll write a report to help the manager prepare for the upcoming "silver tsunami."
 
