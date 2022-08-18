@@ -5,8 +5,9 @@ This project consists of a series of analysis
 
 ## Results
 + Potentially there are over 33,000 eligible for retirement over the next 5 years.  
-+ The senior staff postions will expereince the largest transition with 26,523 postions being vacted due to retirement.  
-+ There will be a shortage of qualified employees availble to transition into the senior staff positions from the mentorship program
++ The senior staff postions will expereince the largest transition with 26,523 postions being vacated due to retirement.  
++ There will be a shortage of qualified employees availble to transition into the senior staff positions from the mentorship program.
++ The company must consider the impacts to the senior levels and make decisions regarding recuriting and retention of potetial replacements.
 
 ### Deliverable 1: The number of Retiring Employees by Title
 The following analysis consists of the employees projected to retire from the Company. Therefore will put in motion several actions with possible replacement and hiring actions. It is understood that the title/postion will be the target of replacement with the first choice of placement being within the company. The "trickle up" effect with be felt across the company due to the multiple transitions. 
